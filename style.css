@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Radio Canada', sans-serif;
+}
+body{
+  background: rgb(226, 226, 226);
+}
+
+.nav-container {
+  width: auto;
+  height: 10px;
+}
+
+nav{
+  height: 100vh;
+  border-radius: 2%;
+  width: 90px;
+  /* width: 280px; */
+  background: #fff;
+  overflow: hidden;
+  transition: 1s;
+  position: fixed;
+}
+nav:hover{
+  width: 250px;
+  transition: 1s;
+}
+
+.pic{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom: 48px;
+}
+
+.pic img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.pic span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+a{
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 10px;
+}
+ nav .bi{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  font-size: 30px;
+  padding-left: 15px;
+  text-align: center;
+  vertical-align: middle;
+} 
+
+.nav-con{
+  position: relative;
+  top: 12px;
+  padding-left: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 15px;
+}
+a:hover{
+  background: #eee;
+}
+a:hover i{
+  color: #34AF6D;
+  transition: 0.5s;
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image:hover {
+    border: 3px solid black;
+}
+
+img {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+}
+
+.info-container {
+    width: 1100px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #89cff0;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px;    
+}
+
+.pfp {
+    width: 250px;
+    height: 325px;
+    margin-left: 12px;
+    line-height: 20px;
+    border-radius: 10%;
+}
+
+.name {
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+
+.job {
+    padding: 0px 20px;
+    text-align: center;
+    font-weight: lighter;
+    color: #4e4e4e;
+    font-style: italic;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.ainfo {
+    height: 240px;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 1300px) {
+  .heading, .image, .img, .info-container, .pfp, .name, .job, .ainfo {   
+    flex-direction: column;
+    
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+
+  .image {
+    flex-basis: 33.33%;
+    width: 12px;
+    height: auto;
+  }
+
+  .ainfo, .job, .name {
+    font-size: medium;
+  }
+  .heading {
+    padding-left: 45px;
+  }
+  .pfp {
+    width:125px;
+    height: auto;
+  }
+  .info-container {
+    height: 300px;
+    width: auto;
+    position: fixed;
+  }
+}
